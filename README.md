@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   
-  <img src="images/logo.png" alt="Logo" width="80" height="80" />
+  <!-- <img src="images/logo.png" alt="Logo" width="80" height="80" /> -->
   <!-- https://drive.google.com/uc?export=view&id=      => Google drive Link -->
 
   <h2 align="center">Input Password</h2>
@@ -94,19 +94,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/JulesEfrei_/inputPassword-React.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -115,7 +111,15 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Import the input component
+   ```js
+   import InputPassword from "./components/InputPassword"
+   ```
+2. Add component to your render
+   ```js
+   <InputPassword />
+   ```
+3. Change style of input (=> `styles/input.scss`)
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
@@ -128,11 +132,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 Here is the roadmap of the project. Checked flags mean the features is out and unchecked flags mean that the feature is comming.
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Patch issue on WithoutType branch
 
 See the [open issues](https://github.com/JulesEfrei/inputPassword-React/issues) for a full list of proposed features (and known issues).
 
@@ -183,7 +183,7 @@ GitHub Profile: [JulesEfrei](https://github.com/JulesEfrei/)
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information. If no license is available in the repository, it will be available one day, I hope.
+Distributed under the MIT License. See `LICENSE` for more information. If no license is available in the repository, it will be available one day, I hope.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -205,4 +205,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information. If no
 [license-url]: https://github.com/JulesEfrei/inputPassword-React/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jules-bruzeau/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: public/screen.png
