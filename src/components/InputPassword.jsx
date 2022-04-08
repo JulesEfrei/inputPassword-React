@@ -2,26 +2,9 @@ import { useState } from "react";
 import "../styles/input.scss"
 
 export default function InputPassword() {
-  const [password, setPassword] = useState("");
-  const [value, setValue] = useState("");
+  const [type, setType] = useState("password");
   const [isVisible, setIsVisible] = useState(false)
 
-  const settingTemp = (e) => {
-    console.log("Change : " + e.target.value)
-
-    setPassword(password + e.target.value[e.target.value.length - 1]);
-
-    if(isVisible == false) {
-        setValue(
-        e.target.value
-          .split("")
-          .map((elm) => "•")
-          .join("")
-      );
-    } else {
-      setValue(e.target.value)
-    }
-  };
 
   return (
     <>
@@ -29,22 +12,17 @@ export default function InputPassword() {
 
         <input
           className="input"
-          type="text"
+          type={type}
           name="password"
           id="passowrd"
-          value={value}
           placeholder="Password"
-          onChange={(e) => settingTemp(e)}
         />
 
         <button
           className="button"
           onClick={ () => {
-              value.includes("•")
-              ? setValue(password)
-              : setValue(password.split("").map((elm) => "•").join(""))
-
-              setIsVisible(!isVisible)
+              setIsVisible(isVisible == true ? false : true)
+              setType(type == "password" ? "text" : "password")
           }
           }
         >
