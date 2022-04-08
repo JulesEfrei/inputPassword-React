@@ -1,0 +1,42 @@
+$primary-color: #F4BBBB;
+$background-color: white;
+$button-color: #F4BBBB;
+$placeholder-font: "Arial";
+
+.input-container {
+
+    border: 2px solid $primary-color;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-self: center;
+    background-color: $background-color;
+
+    .input {
+        border: none;
+        border-radius: 50px;
+
+        &::placeholder {
+            font-family: $placeholder-font;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .button {
+        padding: 0;
+        border: none;
+        background-color: $background-color;
+        border-radius: 50px;
+        fill: $button-color;
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}

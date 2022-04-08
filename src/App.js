@@ -4,9 +4,9 @@ import InputPassword from './components/InputPassword';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ display: 'flex', justifyContent: "center", alignItems: "center", width: "100vw", height: "100vh"}}>
       
-      <InputPassword />
+      <InputPassword/>
 
     </div>
   );
