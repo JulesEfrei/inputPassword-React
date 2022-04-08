@@ -66,10 +66,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-* What the application does ?
-* State of the Project (Alpha, Beta, Realeased)
-* Main difficulties - [Roadmap](#roadmap)
-
+Hide / Show password inside an input using React and the state managment. It works with a type as a React State and take as value "password" by default. When the user click in the button, we set the type as "text" and reverse. In addition we display "block" or "none" the eye svg.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
