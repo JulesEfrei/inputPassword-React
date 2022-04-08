@@ -24,7 +24,7 @@
     <!-- <a href="https://github.com/JulesEfrei/inputPassword-React"><strong>Explore the docs</strong></a> -->
     <br />
     <br />
-    <a href=" https://julesefrei.github.io/inputPassword-React/">View Demo</a>
+    <a href="https://julesefrei.github.io/inputPassword-React/">View Demo</a>
     ·
     <a href="https://github.com/JulesEfrei/inputPassword-React/issues">Report Bug</a>
     ·
